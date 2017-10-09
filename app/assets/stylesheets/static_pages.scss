@@ -1,3 +1,37 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*-----------sticky footer-------------*/
+
+
+html, body {
+	height: 100%;
+}
+
+
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -80px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.site-footer, .page-wrap:after {
+	height: 80px;
+}
+
+.site-footer {
+	background: #e42e1d;
+}
+
+.copyright {
+	float: right;
+	display: inline;
+	color: white;
+}
+
+.site-footer {
+	padding: 1em;
+}
+
+

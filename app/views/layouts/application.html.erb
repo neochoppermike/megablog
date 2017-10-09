@@ -3,12 +3,50 @@
   <head>
     <title>Megablog</title>
     <%= csrf_meta_tags %>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!--link to Bootstrap (for styling) before link to local custom style sheet-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Biryani">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!--link to bootstrap js after JS include tag because BS depends on JQuery- loaded with all other JS-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for responsive app-->
   </head>
 
   <body>
-    <%= yield %>
+    <div class="page-wrap">
+
+
+      <%= yield %>
+
+
+    </div>
+
+    <footer>
+      <div class="site-footer">
+        <a href="https://twitter.com/neochopper" class="fa-stack fa-lg" data-show-count="false">
+        <i class="fa fa-circle-o fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x"></i>
+      </a>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-o fa-stack-2x"></i>
+        <i class="fa fa-facebook fa-stack-1x"></i>
+      </span>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-o fa-stack-2x"></i>
+        <i class="fa fa-linkedin fa-stack-1x"></i>
+      </span>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle-o fa-stack-2x"></i>
+        <i class="fa fa-github-alt fa-stack-1x"></i>
+      </span>
+        <div class="copyright">&copy Writerly.com 2017</div>
+      </div>
+    </footer>
   </body>
 </html>
