@@ -1,3 +1,36 @@
+@font-face {
+    font-family: CODE Light;
+    src: url('/assets/CODE Light');
+}
+
+.navbar-brand {
+	font-family: Slabo 27px;
+	font-size: 300%;
+}
+
+.navbar.navbar-default .navbar-nav > li > a {
+	font-family: Quicksand;
+	margin-top: 25px;
+}
+
+.navbar {
+	background-color: #c7c5a7;
+	height: 100px;
+}
+
+.navbar.navbar-default .navbar-nav > li > a{
+	font-size: 150%;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-form {
+	margin-top: 25px;
+}
+
+
 /*-----------sticky footer-------------*/
 
 
@@ -21,7 +54,7 @@ html, body {
 }
 
 .site-footer {
-	background: #e42e1d;
+	background: #8ba88f;
 }
 
 .copyright {
@@ -34,4 +67,14 @@ html, body {
 	padding: 1em;
 }
 
+/*---------------------general-----------------*/
 
+body { 
+    margin: 0; 
+} 
+
+h1 {
+    font-family: CODE Light;
+    text-align: center;
+    font-size: 400%;
+}
