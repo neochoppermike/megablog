@@ -1,5 +1,11 @@
-<h1>New Article</h1>
+<div class="new">
 
-<%= render 'form', article: @article %>
+<h1>Contribute</h1>
 
-<%= link_to 'Back', articles_path %>
+<p>Here at Writerly we think writing should be a little less angst and solitude and a lot more collaboration and community. We'd love to host your articles- from random musings to in-depth contemplations- as long as their focus is the wonderful world of writing! To post your own well-crafted masterpiece, simply use the form below and hit Create Article. Place the title of the article in the 'name' field and add the body of the article into the 'Description' field. Feel free to include a link to an image if you have one. (Pictures of fluffy wuffy pets are allowed, though frowned-upon)</p>
+
+<form class="left">
+  <%= render 'form', article: @article %>
+</form>
+
+</div>

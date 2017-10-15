@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
   def index
-  	@articles = Article.limit(5)
+  	@articles = Article.all
   end
 end
