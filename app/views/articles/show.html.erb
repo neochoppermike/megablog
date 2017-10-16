@@ -1,24 +1,19 @@
-<p id="notice"><%= notice %></p>
+<%= image_tag(@article.image_url, class: "img-responsive") %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @article.name %>
+<p class="show">
+  <strong><%= @article.title %></strong>
 </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @article.description %>
+<p class="show">
+  <strong><%= @article.author %></strong>
 </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @article.image_url %>
+<p class="show">
+  <%= @article.body %>
 </p>
 
-<p>
-  <strong>Published:</strong>
-  <%= @article.published %>
-</p>
 
+
+<%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>

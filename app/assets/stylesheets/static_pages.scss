@@ -131,27 +131,59 @@ h3 {
     font-size: 400%;
 }
 
-.welcome {
-	border: solid 3px white;
-	color: white;
-	background-color: black;
-	font-size: 300%;
-    font-family: Roboto Slab;
-    padding: 20px;
-    margin-top: 4em;
-}
-
-.welcome:hover {
-	text-decoration: none;
-}
 
 
-.left {
+
+.form {
 	padding-left: 30px;
 	text-align: left;
 }
 
+.show {
+	color: black;
+}
 
+.articles-header {
+	margin-bottom: 1em;
+}
+
+.actions {
+	color: #333;
+}
+
+.enter {
+	margin-top: 6em;
+}
+
+.enter a {
+    margin-top: 6em;
+    color: white;
+    font-size: 300%;
+    font-family: Roboto Slab;
+    transition: 2s;
+}
+
+.enter a:hover {
+	text-decoration: none;
+	background-color: transparent;
+	color: #333;
+
+}
+
+.read-button a{
+	
+	background-color: #999;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0 20px;
+    color: black;
+}
+
+p.read-button a:hover {
+	text-decoration: none;
+    background-color: #999;
+    color: white;
+}
 
 /*----------------images--------------------*/
 
@@ -164,7 +196,7 @@ h3 {
 
 
 .new {
-    height: 60em;
+    height: 70em;
 	background-image: url("joseph_conrad.jpg");
     background-size: 100%;
 	background-repeat: no-repeat;
@@ -184,10 +216,43 @@ h3 {
 	background-repeat: no-repeat;
 }
 
-.articles {
-    height: 55em;
-	background-image: url("ladder.jpeg");
+.artics {
+    height: 95em;
+	background-image: url("bookshop.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
+}
+
+i.fa.fa-twitter.fa-stack-1x{
+	color: black;
+}
+
+.twitter {
+	color: white;
+}
+
+
+i.fa.fa-facebook.fa-stack-1x {
+  color: #3A4C5C;
+}
+
+.facebook {
+	color: white;
+}
+
+i.fa.fa-linkedin.fa-stack-1x{
+	color: #B70000;
+}
+
+.linkedin {
+	color: white;
+}
+
+i.fa.fa-github-alt.fa-stack-1x{
+	color: #FFCA3D;
+}
+
+.github {
+	color: white;
 }
 
